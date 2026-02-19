@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Studio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="studio">
+    <div class="header">
+        <div class="brand">MINIMAL<span style="color:#444">STUDIO</span></div>
+        
+        <div class="controls">
+            <div class="selector">
+                <button class="active" onclick="setMode('piano')">Piano</button>
+                <button onclick="setMode('synth')">Synth</button>
+                <button onclick="setMode('drums')">Drums</button>
+            </div>
+            
+            <div class="rec-container">
+                <div class="status-text" id="status">Ready</div>
+                <button class="rec-btn" id="recBtn" onclick="toggleRecord()">
+                    <svg class="rec-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="keyboard-frame">
+        <div class="keys" id="keyboard">
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
